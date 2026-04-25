@@ -1,0 +1,91 @@
+/*
+  Design Token System — Golden Ratio Scale
+  Based on φ ≈ 1.618
+
+  Drop this file into src/styles/tokens.css and import in your app.css:
+    @import './styles/tokens.css';
+
+  Then replace the placeholder values with your brand colors and fonts.
+*/
+
+:root {
+
+  /* ── Colors ──────────────────────────────────────────────────────────────── */
+  /* Replace these with your brand palette */
+  --color-background:    #030213;   /* Page background */
+  --color-surface:       #0A0E27;   /* Cards, panels, sidebars */
+  --color-accent:        #00D9FF;   /* Primary accent — one color only */
+  --color-text:          #F5F5F5;   /* Primary text */
+  --color-text-secondary:#A0A8C0;   /* Secondary text, captions */
+  --color-safe:          #10B981;   /* Success — verdicts and alerts only */
+  --color-critical:      #F43F5E;   /* Error — verdicts and alerts only */
+  --color-warning:       #F59E0B;   /* Warning — verdicts and alerts only */
+
+  /* ── Spacing — Golden Ratio φ = 1.618 ───────────────────────────────────── */
+  --space-5xs:  0.146rem;   /*  ~2px */
+  --space-4xs:  0.236rem;   /*  ~4px */
+  --space-3xs:  0.382rem;   /*  ~6px */
+  --space-2xs:  0.486rem;   /*  ~8px */
+  --space-xs:   0.618rem;   /* ~10px */
+  --space-sm:   0.786rem;   /* ~13px */
+  --space-md:   1.129rem;   /* ~18px */
+  --space-lg:   1.618rem;   /* ~26px */
+  --space-xl:   2.058rem;   /* ~33px */
+  --space-2xl:  2.618rem;   /* ~42px */
+  --space-3xl:  4.236rem;   /* ~68px */
+
+  /* ── Typography ──────────────────────────────────────────────────────────── */
+  /* Replace with your font choices */
+  --font-primary:   'Inconsolata', 'Courier New', monospace;  /* UI chrome */
+  --font-heading:   'Inter', system-ui, sans-serif;           /* Reading text */
+
+  /* Three sizes — no intermediate values */
+  --font-display-2: 2.618rem;  /* Main headlines (H1) */
+  --font-heading-size: 1.272rem; /* Sub-headlines */
+  --font-body-size: 1rem;      /* Body text */
+  --font-small:     0.786rem;  /* Captions, labels, nav */
+
+  /* Line heights */
+  --line-height-tight:   1.2;
+  --line-height-normal:  1.4;
+  --line-height-relaxed: 1.6;
+
+  /* Letter spacing */
+  --letter-spacing-tight: -0.01em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide:  0.08em;
+
+  /* ── Border Radius ───────────────────────────────────────────────────────── */
+  --radius-sm:   0.236rem;  /* Tags, pills */
+  --radius-md:   0.382rem;  /* Buttons, inputs */
+  --radius-lg:   0.618rem;  /* Cards, panels */
+  --radius-xl:   1rem;      /* Large modals */
+  --radius-full: 9999px;    /* Circular elements */
+
+  /* ── Shadows ─────────────────────────────────────────────────────────────── */
+  --shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md:  0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-lg:  0 8px 32px rgba(0, 0, 0, 0.4);
+
+  /* ── Transitions ─────────────────────────────────────────────────────────── */
+  --transition-fast:   150ms ease;
+  --transition-normal: 250ms ease;
+
+  /* ── Layout ──────────────────────────────────────────────────────────────── */
+  --container-sm:  38.2rem;   /* Narrow/form content */
+  --container-md:  61.8rem;   /* Main reading column */
+  --container-lg:  100rem;    /* Wide layouts, header */
+  --container-xl:  161.8rem;  /* Full bleed wrappers */
+
+  --layout-sidebar-width:         320px;
+  --layout-sidebar-width-compact: 260px;
+}
+
+/* ── Light mode overrides ─────────────────────────────────────────────────── */
+/* Replace [data-theme="light"] with your theme selector if different */
+[data-theme="light"] {
+  --color-background:     #FFFFFF;
+  --color-surface:        #F5F5F7;
+  --color-text:           #030213;
+  --color-text-secondary: #5A6070;
+}
