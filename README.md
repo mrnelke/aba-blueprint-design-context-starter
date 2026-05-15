@@ -18,6 +18,10 @@ Three layers that enforce your design rules without manual effort:
 
 ## Get started
 
+```bash
+git clone https://github.com/mrnelke/aba-blueprint-design-context-starter
+```
+
 Open `QUICK_START.md` - 15 minutes from clone to a working enforcement system.
 
 **Recommended path:** Complete `SETUP_WIZARD.md` first (10 min). It generates personalised files from your answers so you start with your actual values - no placeholders to fill in manually.
